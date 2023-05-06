@@ -54,6 +54,7 @@
                     <label for="Donativo" class="form-label">Monto a donar</label>
                     <input type="number" class="form-control" name="Donativo" id="Donativo"
                     placeholder="Ingrese monto en CLP">
+                    <div id="Vmonto" class="error">Debe ser mayor a 0</div>
                 </div>
                 <div class="form-group col-sm-6 col-md-6 col-xl-5">
                     <img src="https://img.icons8.com/ios-filled/30/null/visa.png"/>
@@ -62,6 +63,7 @@
                     <label for="optTipo">Metodo de pago</label>
                     <select class="form-select" name="optMetodoP" id="optMetodoP">
                         <optgroup label="ListaP">
+                            <option value="0">Seleccione</option>
                             <option value="1">Visa</option>
                             <option value="2">Mastercad</option>
                             <option value="3">Pay pay</option>
@@ -70,13 +72,14 @@
                             <option value="6">Otro</option>
                         </optgroup>
                     </select><br>
+                    <div id="Vmetodo" class="error">*Obligatorio</div>
                 </div>
                 <div class="form-group col-sm-9 col-md-8 col-xl-7">
                     <label for="mensaje">Mensaje [Opcional]</label>
                     <textarea class="form-control" id="mensaje" rows="3"></textarea>
                 </div>
                 <div class="form-group col-sm">
-                    <input class="btn btn-primary" type="button" name="btnEnviar" value="Enviar">
+                    <input class="btn btn-primary" type="button" name="btnEnviar" value="Enviar" id="Pago">
                     <img src="https://img.icons8.com/external-phatplus-solid-phatplus/64/null/external-help-authentication-phatplus-solid-phatplus.png"/>
                 </div>
             </form>
@@ -86,4 +89,6 @@
     </div>
     
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="../(Jquery)/Suscripcion.js"></script>
 </html>

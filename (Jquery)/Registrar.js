@@ -7,10 +7,13 @@ $(document).ready(function(){
         var fono = $("#telefono").val();
         var genero = $("#optGenero").val();
         var clave = $("#pass").val();
+        var clave2 = $("#pass2").val();
         var sobrenombre = $("#nombreU").val();
         var team = $("#optEquipo").val();
         var restrictora = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+/;
-
+        var acceso = true;
+        
+       
         if(nombre == ""){
             $("#Verify1").fadeIn();
             return false;
@@ -31,20 +34,32 @@ $(document).ready(function(){
                         return false;
                     }else{
                         $("#Verify4").fadeOut();
-                        if(telefono <=0 && telefono >999999999){
+                        if(fono <111111111 || fono >999999999){
                             $("#Verify5").fadeIn();
                             return false;
                         }else{
                             $("#Verify5").fadeOut();
-                            if(genero){
+                            if(genero == "0"){
+                                $("#Verify6").fadeIn();
+                                return false;
 
                             }else{
                                 $("#Verify6").fadeOut();
-                                if(clave = ""){
+                                if(clave == ""){
                                     $("#Verify7").fadeIn();
                                     return false;
                                 }else{
                                     $("#Verify7").fadeOut();
+                                    if(clave2 != clave){
+                                        $("#Verify8").fadeIn();
+                                        return false;
+                                    }else{
+                                        $("#Verify8").fadeOut();
+                                        if(acceso = true){
+                                            window.location.href = "http://127.0.0.1:5500/(HTML)/Home.HTML";
+                                        }
+
+                                    }
                                 }
                             }
                         }
@@ -54,4 +69,28 @@ $(document).ready(function(){
         }
         
     })
-})
+
+    $("#empresa").click(function(){ 
+        $("#empresa").hide();
+        
+        
+    });
+
+    $("#Verify1").hide();
+    $("#Verify2").hide();
+    $("#Verify3").hide();
+    $("#Verify4").hide();
+    $("#Verify5").hide();
+    $("#Verify6").hide();
+    $("#Verify7").hide();
+    $("#Verify8").hide();
+    $("#Verify9").hide();
+    $("#Verify10").hide();
+
+    $("#telefono").on('input', function () { 
+        this.value = this.value.replace(/[^0-9]/g,'');
+    });
+
+    
+
+});

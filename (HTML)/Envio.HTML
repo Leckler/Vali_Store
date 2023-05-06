@@ -7,10 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../(CSS)/Registrar.css">
-    <title>Registros</title>
+    <link rel="stylesheet" href="../(CSS)/Envio.css">
+    <title>Formulario de envio</title>
 </head>
-
 <header>
     <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -45,95 +44,75 @@
 <body>
     <div class="container-fluid">
         <div class="raw">
-            <legend>Formulario de inscripcion</legend>
+            <legend>Datos personales</legend>
             <form action="" method="">
                 <div class="form-group col-sm-8">
                     <label for="pnombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" name="pnombre" id="pnombre" 
                     placeholder="Ingrese nombre" required>
-                    <div id="Verify1" class="error">Este campo no puede estar vacio</div>
+                    <div id="VerifyN" class="error">Este campo no puede estar vacio</div>
                 </div>
                 <div class="form-group col-sm-8">
                     <label for="apaterno" class="form-label">Apellido</label>
                     <input type="text" class="form-control" name="apaterno" id="apaterno"
                     placeholder="Ingrese apellido" required>
-                    <div id="Verify2" class="error">Este campo no puede estar vacio</div>
-                </div>
-                <div class="form-group col-sm-4">
-                    <label for="edad" class="form-label">Edad</label>
-                    <input type="number" class="form-control" name="edad" id="edad"
-                    placeholder="..." required>
-                    <div id="Verify3" class="error">Debe ser +17</div>
+                    <div id="VerifyA" class="error">Este campo no puede estar vacio</div>
                 </div>
                 <div class="form-group col-sm-12 col-md-9">
                     <label for="correo" class="form-label">E-mail</label>
                     <input type="email" class="form-control" name="correo" id="correo"
                     placeholder="Ingrese correo electronico" required>
-                    <div id="Verify4" class="error">Correo debe ser alfanumerico e incluir @</div>
+                    <div id="VerifyE" class="error">Correo debe ser alfanumerico e incluir @</div>
                 </div>
                 <div class="form-group col-sm-8">
                     <label for="telefono" class="form-label">Telefono</label>
                     <input type="tel" class="form-control" name="telefono" id="telefono"
                     placeholder="Ingrese telefono celular +56" required>
-                    <div id="Verify5" class="error">Telefono debe tener 9 digitos</div>
+                    <div id="VerifyT" class="error">Telefono debe tener 9 digitos</div>
+                </div>
+            </form>
+        </div>
+        <div id="espacio"></div>
+        <div class="raw">
+            <legend>Datos de envio</legend>
+            <form action="" method="">
+                <div class="form-group col-sm-8">
+                    <label for="direccion" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" name="direccion" id="direccion" 
+                    placeholder="Ingrese direccion hogar" required>
+                    <div id="VerifyD" class="error">Este campo no puede estar vacio</div>
                 </div>
                 <div class="form-group col-sm-8">
-                    <label for="optTipo">Genero</label>
-                    <select class="form-select" name="optGenero" id="optGenero" required>
-                        <optgroup label="Lista">
-                            <option value="0">Seleccione</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Femenino</option>
-                            <option value="3">Otro</option>
-                            <option value="4">Prefiero no mencionarlo </option>
+                    <label for="optRegion">Region</label>
+                    <select class="form-select" name="optRegion" id="optRegion" required>
+                        <optgroup label="Regiones">
+                            <option value="">Seleccione Region</option>
                         </optgroup>
                     </select>
-                    <div id="Verify6" class="error">*Obligatorio</div>
+                    <div id="VerifyR" class="error">*Obligatorio</div>
                 </div>
                 <div class="form-group col-sm-8">
-                    <label for="pass" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" name="pass" id="pass"
-                    placeholder="Ingrese una clave" required>
-                    <div id="Verify7" class="error">Debe incluir letras, numeros y especiales</div>
-                </div>
-                <div class="form-group col-sm-8">
-                    <label for="pass" class="form-label">Repetir Contraseña</label>
-                    <input type="password" class="form-control" name="pass" id="pass2"
-                    placeholder="Ingrese nuevamente" required>
-                    <div id="Verify8" class="error">Ingrese nuevamente</div>
-                </div>
-                <div class="form-group col-sm-8">
-                    <label for="nombreU" class="form-label">Nombre usuario</label>
-                    <input type="text" class="form-control" name="nombreU" id="nombreU"
-                    placeholder="Ingrese nombre de usuario">
-                    <div id="Verify9" class="error">*Opcional</div>
-                </div>
-                <div class="form-group col-sm-8">
-                    <label for="optEquipo">Equipo [opcional]</label>
-                    <select class="form-select" name="optEquipo" id="optEquipo">
-                        <optgroup label="ListaM">
-                            <option value="1">Perro</option>
-                            <option value="2">Gato</option>
-                            <option value="3">Otro</option>
+                    <label for="optComuna">Comuna</label>
+                    <select class="form-select" name="optComuna" id="optComuna" required>
+                        <optgroup label="Comunas">
+                            <option value="">Seleccione Comuna</option>
                         </optgroup>
                     </select>
-                    <div id="Verify10" class="error">*Opcional</div>
+                    <div id="VerifyC" class="error">*Obligatorio</div>
                 </div>
-                <div class="form-group col-sm-2">
-                    <input class="btn btn-primary" type="button" name="btnEnviar" value="Enviar" id="btnEnviar">
+                <div class="form-group col-sm-9 col-md-8 col-xl-7">
+                    <label for="mensaje">Informacion Adicional [Opcional]</label>
+                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
                 </div>
-                <div>
-                    <img src="https://img.icons8.com/ios-filled/100/null/german-shepherd.png"/>
+                <div class="form-group col-sm">
+                    <input class="btn btn-primary" type="button" name="EnviarP" value="Enviar Producto" id="EnviarP">
+                    <i class="bi bi-house-check"></i>
                 </div>
             </form>
         </div>
 
     </div>
-
-
-    
-    
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="../(Jquery)/Registrar.js"></script>
+<script src="../(Jquery)/Envio.js"></script>
 </html>

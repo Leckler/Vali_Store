@@ -36,3 +36,7 @@ label{
 .error{
     font-style: oblique;
 }
+
+#btnEnviar{
+    margin-top: 40px;
+}
