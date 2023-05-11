@@ -1,0 +1,37 @@
+Importante a tener en cuenta
+
+Extras almacena informacion respecto a:
+
+-Logros
+-Correciones
+-Necesidades/faltantes
+-Material desechado o reciclado
+
+Logrados
+
+1- Se lograron validar con jquery los campos de Login/Registrar/Suscripcion/Envio.
+2- Se agregaron mas elementos/se eliminaron exceso de botones/se utilizo un color fondo estandar/mejoro la redireccion de pagina.
+3- Se logro un trabajo mas ordenado dividido en carpetas y almacenamiento correcto de imagenes.
+
+
+Necesarios
+
+1- La pagina de envio de formulario esta disponible pero
+   no se encuentra redireccionada a ninguna, puesto que
+   se necesita un carrito de compras para unirla.
+
+2- Las validaciones estan concretadas pero mi objetivo es que
+   Productos.html sea una vista general a los productos y que
+   Fragmentos.html solo este disponible para los previamente
+   registrados permitiendoles comprar y ver detalles.
+
+3- Mi perfil.html se puede visualizar pero aun no se tiene
+   la tabla a disposicion puesto que se requiere una BD,
+   se intento seguir un ejemplo utilizando xml, pero
+   no me funciono y no lo comprendo aun muy bien.
+
+4- No se ha logrado resolver el tema de no permitir numeros
+   en los campos nombre y apellido.
+
+5- Para agregar el desuscribirse requiero tambien
+   almacenar un registro previo de usuario en una BD.

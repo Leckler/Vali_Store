@@ -18,6 +18,10 @@ $(document).ready(function(){
             $("#Vmetodo").fadeOut();
         }
 
+        if(acceso = true){
+            window.location.href = "Home.HTML";
+        }
+
 
         
 

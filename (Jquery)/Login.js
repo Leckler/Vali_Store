@@ -5,11 +5,16 @@ $(document).ready(function(){
 
         var enlace = true;
         if(usuario.length == 0){
+            $("#Lnombre").fadeIn();
             enlace = false;
-        }
-
-        if(entrada.length < 8){
-            enlace = false;
+        }else{
+            $("#Lnombre").fadeOut();
+            if(entrada.length < 6){
+                $("#Lclave").fadeIn();
+                enlace = false;
+            }else{
+                $("#Lclave").fadeOut();
+            }
         }
 
         if (enlace){
@@ -25,7 +30,7 @@ $(document).ready(function(){
         }
 
         if(enlace == true){
-            window.location.href = "http://127.0.0.1:5500/(HTML)/Home.HTML";
+            window.location.href = "Home.HTML";
         }
 
     })
@@ -38,4 +43,7 @@ $(document).ready(function(){
             $("#nombre").css("border","1px solid lightgrey")
         }
     })
+
+    $("#Lnombre").hide();
+    $("#Lclave").hide();
 })

@@ -1,0 +1,30 @@
+<historial>
+    <CD>
+        <ID>001</ID>
+        <Domicilio>Avenida port center #2331</Domicilio>
+        <Estado>En proceso</Estado>
+        <FechaCompra>10/04/2023</FechaCompra>
+        <FechaEntrega>12/05/2023</FechaEntrega>
+    </CD>
+    <CD>
+        <ID>002</ID>
+        <Domicilio>Avenida san carlos #564</Domicilio>
+        <Estado>En proceso</Estado>
+        <FechaCompra>10/04/2023</FechaCompra>
+        <FechaEntrega>12/05/2023</FechaEntrega>
+    </CD>
+    <CD>
+        <ID>003</ID>
+        <Domicilio>Avenida escuela militar #3991</Domicilio>
+        <Estado>En proceso</Estado>
+        <FechaCompra>10/04/2023</FechaCompra>
+        <FechaEntrega>12/05/2023</FechaEntrega>
+    </CD>
+    <CD>
+        <ID>004</ID>
+        <Domicilio>Avenida las delicias #556</Domicilio>
+        <Estado>En proceso</Estado>
+        <FechaCompra>10/04/2023</FechaCompra>
+        <FechaEntrega>12/05/2023</FechaEntrega>
+    </CD>
+</historial>
